@@ -1,8 +1,6 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
 import SingleComment from "./SingleComment";
 
-function CommentsList({ comments }) {
+function CommentList({ comments }) {
   return (
     <div>
       {comments.map((comment) => (
@@ -12,4 +10,4 @@ function CommentsList({ comments }) {
   );
 }
 
-export default CommentsList;
+export default CommentList;

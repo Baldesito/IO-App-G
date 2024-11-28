@@ -1,8 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from "react";
-import CommentsList from "./CommentsList";
 import AddComment from "./AddComment";
-
 function CommentArea({ bookId }) {
   const [comments, setComments] = useState([]);
 
@@ -17,8 +15,12 @@ function CommentArea({ bookId }) {
 
   return (
     <div>
-      <CommentsList comments={comments} />
       <AddComment bookId={bookId} />
+      <ul>
+        {comments.map((comment) => (
+          <li key={comment._id}>{comment.comment}</li>
+        ))}
+      </ul>
     </div>
   );
 }
