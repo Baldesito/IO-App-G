@@ -7,6 +7,7 @@ import ReservationForm from "./components/ReservationForm";
 import React, { Component } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import books from "./data/horror.json";
+import CommentList from "./components/CommentList";
 class App extends Component {
   state = {
     books: books,

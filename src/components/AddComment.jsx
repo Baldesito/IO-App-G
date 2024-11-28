@@ -13,6 +13,8 @@ function AddComment({ bookId }) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        Authorization:
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzQ4ODE0ZjA2ZmM4YzAwMTU2Yjg3NGMiLCJpYXQiOjE3MzI4MDQ5NDMsImV4cCI6MTczNDAxNDU0M30.ALB3YCI6DSsFHOzvR7IdWxgJhj7KfckhhhPRlKYx3YY",
       },
       body: JSON.stringify(newComment),
     })

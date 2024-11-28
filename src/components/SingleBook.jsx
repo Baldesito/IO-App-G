@@ -30,6 +30,7 @@ class SingleBook extends Component {
             <Card.Text>
               <div>{book.price}</div>
             </Card.Text>
+
             <Button className="m-2 btn-success" variant="primary">
               Prenota
             </Button>
@@ -38,6 +39,7 @@ class SingleBook extends Component {
             </Button>
           </Card.Body>
         </Card>
+
         {this.state.selected && <CommentArea bookId={book.asin} />}
       </div>
     );
